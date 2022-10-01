@@ -8,7 +8,7 @@ const EventCard = (props) => {
             <h2 className="block text-gray-900 text-xl leading-tight font-medium mb-4">
                 {props.name}
             </h2>
-            <Link to={`/event/${props.url}`} className="focus:ring-4 focus:outline-none focus:border-sky-800 w-fit inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+            <Link to={`/event/${props.url}`} className="focus:ring-4 focus:outline-none focus:border-sky-800 focus:bg-blue-700 focus:shadow-lg w-fit inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg  active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                 Learn more
             </Link>
         </div>

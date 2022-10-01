@@ -1,5 +1,4 @@
 import React from 'react';
-// import GetEvents from '../scripts/GetEvents';
 import EventCard from './EventCard'
 import { useState, useEffect } from 'react';
 import axios from 'axios';

@@ -19,8 +19,6 @@ const Event = () => {
             })
     }, [url])    
 
-    // console.log(data)
-
     // Only return our event page if data is not empty
     if (data.length !== 0) { 
         const name = data.name;
