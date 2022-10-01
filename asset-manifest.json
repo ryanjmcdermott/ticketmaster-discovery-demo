@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ticketmaster-discovery-demo/static/css/main.5b6fe6fc.css",
+    "main.js": "/ticketmaster-discovery-demo/static/js/main.4539ea0d.js",
+    "static/js/787.8074a365.chunk.js": "/ticketmaster-discovery-demo/static/js/787.8074a365.chunk.js",
+    "index.html": "/ticketmaster-discovery-demo/index.html",
+    "main.5b6fe6fc.css.map": "/ticketmaster-discovery-demo/static/css/main.5b6fe6fc.css.map",
+    "main.4539ea0d.js.map": "/ticketmaster-discovery-demo/static/js/main.4539ea0d.js.map",
+    "787.8074a365.chunk.js.map": "/ticketmaster-discovery-demo/static/js/787.8074a365.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b6fe6fc.css",
+    "static/js/main.4539ea0d.js"
+  ]
+}
