@@ -4,6 +4,7 @@ import Container from '../components/Container'
 
 function Home() {
   return (
+    <>
       <Container>
         <div className="text-center">
           <h1 className="text-4xl pb-4 font-bold sm:text-5xl">
@@ -15,6 +16,7 @@ function Home() {
           <Events />
         </div>
       </Container>
+    </>
   )
 }
 
