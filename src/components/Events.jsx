@@ -3,6 +3,10 @@ import EventCard from './EventCard'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ReactPaginate  from 'react-paginate';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, light, thin, duotone, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+
+
 
 // Return our Events page
 function Events() {
@@ -33,6 +37,7 @@ function Events() {
     const eventsPerPage = 8;
     const pagesVisited = pageNumber * eventsPerPage;
 
+    // This displays our 8 events per page
     const displayEvents = events
         .slice(pagesVisited, pagesVisited + eventsPerPage)
         .map(event => {
@@ -45,8 +50,10 @@ function Events() {
             );
         });
 
+    // Used to determine the total pages used in <ReactPaginate>
     const pageCount = Math.ceil(events.length / eventsPerPage);
 
+    // Used by <ReactPaginate> to do page magic
     const changePage = ({selected}) => {
         setPageNumber(selected);
     }
@@ -56,18 +63,23 @@ function Events() {
         <div className="pt-10 flex flex-col justify-center content-center items-stretch md:flex-row md:flex-wrap">    
             {/* {events ? ( */}
                     {displayEvents}
+                    
                     <ReactPaginate
-                        previousLabel={'Previous'}
-                        nextLabel={'Next'}
+                        previousLabel={<FontAwesomeIcon icon={light('angle-left')} />}
+                        nextLabel={<FontAwesomeIcon icon={light('angle-right')} />}
                         pageCount={pageCount}
                         onPageChange={changePage}
-                        containerClassName={"flex flex-row justify-center font-bold"}
-                        previousLinkClassName={"pr-4"}
-                        nextLinkClassName={"pl-4"}
-                        disabledClassName={"font-normal"}
-                        activeClassName={"font-normal"}
-                        pageClassName={"px-4 hidden sm:block"}
-                        pageLinkClassName={""}
+                        containerClassName={"flex flex-row justify-center items-center"}
+                        previousClassName={"pr-2"}
+                        nextClassName={"pr-2"}
+                        previousLinkClassName={"px-4 py-2 rounded hover:bg-blue-600 hover:text-white"}
+                        nextLinkClassName={"px-4 py-2 rounded hover:bg-blue-600 hover:text-white"}
+                        activeClassName={"font-bold"}
+                        activeLinkClassName={"text-blue-500"}
+                        pageClassName={"px-2 hidden lg:block"}
+                        pageLinkClassName={"px-4 py-2 text-black rounded hover:bg-blue-600 hover:text-white"}
+                        breakClassName={"hidden lg:block"}
+                        disabledClassName={"opacity-50 hover:bg-none cursor-default"}
                     />
             {/* ) : (
                 // This is shown until 'events' is loaded
