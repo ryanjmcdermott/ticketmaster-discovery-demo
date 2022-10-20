@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@babel/preset-env": "^7.19.3",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
@@ -26,11 +25,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "babel src -d lib",
-    "test": "react-scripts test",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -53,14 +52,13 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.4",
     "autoprefixer": "^10.4.12",
-    "babel": "^5.8.23",
-    "babel-loader": "^5.3.2",
+    "customize-cra": "^1.0.0",
     "gh-pages": "^4.0.0",
-    "postcss": "^8.4.16"
-  },
-  "resolutions": {
-    "nth-check": "2.0.1"
+    "postcss": "^8.4.16",
+    "react-app-rewired": "^2.2.1"
   }
 }
