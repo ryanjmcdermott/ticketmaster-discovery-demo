@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ticketmaster-discovery-demo/static/css/main.e1b06c87.css",
-    "main.js": "/ticketmaster-discovery-demo/static/js/main.ef78db92.js",
-    "static/js/787.8074a365.chunk.js": "/ticketmaster-discovery-demo/static/js/787.8074a365.chunk.js",
+    "main.css": "/ticketmaster-discovery-demo/static/css/main.99ac172f.css",
+    "main.js": "/ticketmaster-discovery-demo/static/js/main.59d0865d.js",
+    "static/js/651.a3962419.chunk.js": "/ticketmaster-discovery-demo/static/js/651.a3962419.chunk.js",
     "index.html": "/ticketmaster-discovery-demo/index.html",
-    "main.e1b06c87.css.map": "/ticketmaster-discovery-demo/static/css/main.e1b06c87.css.map",
-    "main.ef78db92.js.map": "/ticketmaster-discovery-demo/static/js/main.ef78db92.js.map",
-    "787.8074a365.chunk.js.map": "/ticketmaster-discovery-demo/static/js/787.8074a365.chunk.js.map"
+    "main.99ac172f.css.map": "/ticketmaster-discovery-demo/static/css/main.99ac172f.css.map",
+    "main.59d0865d.js.map": "/ticketmaster-discovery-demo/static/js/main.59d0865d.js.map",
+    "651.a3962419.chunk.js.map": "/ticketmaster-discovery-demo/static/js/651.a3962419.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1b06c87.css",
-    "static/js/main.ef78db92.js"
+    "static/css/main.99ac172f.css",
+    "static/js/main.59d0865d.js"
   ]
 }
